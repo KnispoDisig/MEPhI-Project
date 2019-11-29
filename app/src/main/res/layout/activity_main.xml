@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/panel"
+        android:id="@+id/panel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </include>
+
+    <include layout="@layout/up_panel"
+        android:id="@+id/up_panel"></include>
+
+    <RelativeLayout
+        android:id="@+id/date_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/up_panel"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="date, 20.12.2019"
+            android:textSize="20dp">
+        </TextView>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/date"
+            android:text="▶"
+            android:textSize="20dp"
+            android:paddingBottom="1dp">
+        </Button>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/date"
+            android:text="◀"
+            android:textSize="20dp"
+            android:textAlignment="center">
+
+        </Button>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date_nav"
+        android:layout_above="@id/panel">
+
+        <RelativeLayout
+            android:id="@+id/lessons_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET"
+        android:onClick="getLesson">
+    </Button>
+
+
+</RelativeLayout>

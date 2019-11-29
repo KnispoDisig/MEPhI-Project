@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/down_pnl"
+    android:background="@color/main">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Расписание"
+        android:textSize="11dp"
+        android:onClick="toTimeTable"
+        android:background="@color/main"
+        android:textColor="#ffffff">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Заметки"
+        android:textSize="11dp"
+        android:onClick="toNotes"
+        android:background="@color/main"
+        android:textColor="#ffffff">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Группы"
+        android:textSize="11dp"
+        android:onClick="toGroups"
+        android:background="@color/main"
+        android:textColor="#ffffff">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Профиль"
+        android:textSize="11dp"
+        android:onClick="toProfile"
+        android:background="@color/main"
+        android:textColor="#ffffff">
+    </Button>
+
+</LinearLayout>
